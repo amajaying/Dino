@@ -1,13 +1,14 @@
 @font-face {
-    font-family: OpenDyslexic;
-    src: url('/assets/fonts/OpenDyslexic-Regular.otf');
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/otf/OpenDyslexic-Regular.otf') format('opentype');
+    src: url('/fonts/woff/OpenDyslexic-Regular.woff') format('woff'), url('/fonts/ttf/OpenDyslexic-Regular.ttf') format('truetype'), url('/fonts/svg/OpenDyslexic-Regular.svg') format('svg');
 }
 
 * {
     font-family: OpenDyslexic;
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .centered {

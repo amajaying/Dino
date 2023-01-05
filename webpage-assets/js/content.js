@@ -1,3 +1,17 @@
+const fontFace = `
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/otf/OpenDyslexic-Regular.otf') format('opentype');
+    src: url('/fonts/woff/OpenDyslexic-Regular.woff') format('woff'), url('/fonts/ttf/OpenDyslexic-Regular.ttf') format('truetype'), url('/fonts/svg/OpenDyslexic-Regular.svg') format('svg');
+}
+`;
+
+const style = document.createElement('style');
+style.type = 'text/css';
+style.appendChild(document.createTextNode(fontFace));
+document.head.appendChild(style);
+
+
 const synth = window.speechSynthesis;
 document.getElementsByTagName("body")[0].setAttribute("id", "fonter");
 const bd = document.querySelector("#fonter");
